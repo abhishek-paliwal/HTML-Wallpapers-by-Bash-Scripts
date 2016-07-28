@@ -30,7 +30,8 @@
 
 ### Type 1 - HTML output screenshot (background colors are randomly generated)
 
-
-
+![type1-wallpaper-samples.jpg](_sample_output/type1-samples.jpg)
 
 ### Type 2 - HTML output screenshot (Colors are randomly generated)
+
+![type2-wallpaper-samples.jpg](_sample_output/type2-samples.jpg)
