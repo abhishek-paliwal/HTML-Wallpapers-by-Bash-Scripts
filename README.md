@@ -29,9 +29,11 @@
 -----------------
 
 ### Type 1 - HTML output screenshot (background colors are randomly generated)
+[Sample HTML file - Type 1 Wallpaper](_sample_output/Type1-12-Words-Sometimes-The-Smallest-Things-Take-Up-The-Most-Room-In-Your-Heart.html)
 
 ![type1-wallpaper-samples.jpg](_sample_output/type1-samples.jpg)
 
 ### Type 2 - HTML output screenshot (Colors are randomly generated)
+[Sample HTML file - Type 2 Wallpaper](_sample_output/Type2-12-Words-Sometimes-The-Smallest-Things-Take-Up-The-Most-Room-In-Your-Heart.html)
 
 ![type2-wallpaper-samples.jpg](_sample_output/type2-samples.jpg)
