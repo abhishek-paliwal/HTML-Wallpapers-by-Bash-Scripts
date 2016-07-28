@@ -9,13 +9,13 @@
 1. ** Run command to create Type 1 wallpapers **
 
 	```
-	> sh _wallpaper_creator_type1.sh _quotes.txt
+	> sh wallpaper_creator_type1.sh _quotes.txt
 	```
 
 2. ** Run command to create Type 2 wallpapers **
 
 	```
-	> sh _wallpaper_creator_type2.sh _quotes.txt
+	> sh wallpaper_creator_type2.sh _quotes.txt
 	```
 
 3. ** Create PNG/JPG images automatically from the generated HTML wallpaper files from the above commands: **
@@ -23,7 +23,7 @@
 	* NOTE: The following command will only work when the font files are stored locally. You might also have to edit the inline `<style>` tag in these HTML files and add the `@font-face` properties to make it work.
 
 	```
-	> sh _wkhtmltoimage_output_creator.sh
+	> sh wkhtmltoimage_output_creator.sh
 	```
 
 -----------------
