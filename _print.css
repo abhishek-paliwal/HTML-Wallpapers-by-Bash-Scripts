@@ -1,0 +1,20 @@
+/* THESE PAGE PRINT AND LAYOUT SETTINGS ONLY WORK ON GOOGLE CHROME*/
+@media (max-width: 20in) {
+    @page {
+      size: 12in 7.2in; /* 16:10 resolution. Change This Size to Match to Your Needs */
+    }
+     p {
+        font-family: 'Source Code Pro';
+    }
+    
+    h1 {
+        /* color: #F57C00; */
+        font-family: 'Source Code Pro';
+        font-weight: 200;
+        font-size: 40px;
+        letter-spacing: 20px;
+        line-height: 40px;
+    }
+  }
+
+   
