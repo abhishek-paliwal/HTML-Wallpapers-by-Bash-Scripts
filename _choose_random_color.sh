@@ -1,6 +1,21 @@
 #!/bin/bash
-## RUN THIS COMMAND FIRST, WHICH WILL CALL THIS BASH SCRIPT INSIDE IT :> sh _wallpaper_creator.sh _quotes.txt
 
+##++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+## CREATING SCRIPT USAGE FUNCION AND CALLING IT VIA '--help'
+usage()
+{
+cat <<EOM
+USAGE: $(basename $0)
+    ## THIS BASH SCRIPT CALLS THIS BASH SCRIPT INSIDE IT :> sh _wallpaper_creator.sh _quotes.txt
+EOM
+
+exit 0 ## EXITING IF ONLY USAGE IS NEEDED
+}
+## Calling the usage function
+if [ "$1" == "--help" ] ; then usage ; fi
+##++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+
+## RUN THIS COMMAND FIRST, WHICH WILL CALL THIS BASH SCRIPT INSIDE IT :> sh _wallpaper_creator.sh _quotes.txt
 primary_colors=('#000000' '#2196F3' '#795548' '#607D8B' '#FF9800' '#009688' '#C0C0C0' '#FFEB3B' '#F44336' '#E91E63' '#9C27B0' '#673AB7' '#00BCD4' '#4CAF50' '#CDDC39' '#3F51B5' '#FFFFFF')
 
 darker_primary_colors=('#454545' '#1976D2' '#5D4037' '#455A64' '#F57C00' '#00796B' '#A0A0A0' '#FBC02D' '#D32F2F' '#FF4081' '#7B1FA2' '#512DA8' '#0097A7' '#388E3C' '#AFB42B' '#303F9F' '#E0E0E0')
