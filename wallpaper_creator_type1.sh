@@ -48,8 +48,8 @@ function FUNC_create_wallpapers () {
  	#assigning an array to the whole line with each word as its member element.
 	stringarray=($line)
 	words_in_line=${#stringarray[@]} ;
-	filename="$OUTPUT_DIR/wallpaper-for-quote-$countVar-containing-total-$words_in_line-words.html" ;
-	echo "wallpaper filename = $filename" ; 
+	filename="$OUTPUT_DIR/$THIS_SCRIPT_NAME_SANS_EXTENSION-for-quote-$countVar-with-total-$words_in_line-words.html" ;
+	echo ">> Wallpaper filename = $filename" ; 
 	
 	# generate random css colors from another BASH script to the dump file
 	bash $WORKDIR/_choose_random_color.sh > $filename;
