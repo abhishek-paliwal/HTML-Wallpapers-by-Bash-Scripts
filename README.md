@@ -1,39 +1,48 @@
 # Instructions to run these Wallpaper Bash Scripts
 
-#### Updated: July 29, 2016 // NOTE: These scripts have dependencies on the native commands on OS X, and will produce the desired outputs on Mac OS X only.   
+These wallpaper creation scripts will also create PNG/JPG images automatically from the generated HTML wallpaper files using wkhtmltoimage. You can install these dependencies by the following commands:
+
+```bash
+## Install it using homebrew on MAC OS : 
+## brew install --cask wkhtmltopdf
+##
+## Install it using linuxbrew on Linux : 
+## brew install --cask wkhtmltopdf
+```
 
 ------------
 
 1. Open the `_quotes.txt` file and change the text. Put one quote per line, and all uppercased.
 
-1. ** Run command to create Type 1 wallpapers **
+2. Run command to create Type 1 wallpapers
 
-	```
-	> sh wallpaper_creator_type1.sh _quotes.txt
-	```
-
-2. ** Run command to create Type 2 wallpapers **
-
-	```
-	> sh wallpaper_creator_type2.sh _quotes.txt
+	```bash
+	bash wallpaper_creator_type1.sh _quotes.txt
 	```
 
-3. ** Create PNG/JPG images automatically from the generated HTML wallpaper files from the above commands: **
+3. Run command to create Type 2 wallpapers
 
-	* NOTE: The following command will only work when the font files are stored locally. You might also have to edit the inline `<style>` tag in these HTML files and add the `@font-face` properties to make it work.
-
-	```
-	> sh wkhtmltoimage_output_creator.sh
+	```bash
+	bash wallpaper_creator_type2.sh _quotes.txt
 	```
 
 -----------------
 
 ### Type 1 - HTML output screenshot (background colors are randomly generated)
-[Sample HTML file - Type 1 Wallpaper](_sample_output/Type1-12-Words-Sometimes-The-Smallest-Things-Take-Up-The-Most-Room-In-Your-Heart.html)
+[Sample generated HTML file - Type 1 Wallpaper](_outputs_wallpaper_creator_type1/wallpaper_creator_type1-for-quote-1-with-total-15-words.html)
 
-![type1-wallpaper-samples.jpg](_sample_output/type1-samples.jpg)
+![type1-wallpaper-samples.jpg](_outputs_wallpaper_creator_type1/wallpaper_creator_type1-for-quote-1-with-total-15-words.jpg)
+
+![type1-wallpaper-samples.jpg](_outputs_wallpaper_creator_type1/wallpaper_creator_type1-for-quote-2-with-total-15-words.jpg)
+
+![type1-wallpaper-samples.jpg](_outputs_wallpaper_creator_type1/wallpaper_creator_type1-for-quote-3-with-total-24-words.jpg)
+
 
 ### Type 2 - HTML output screenshot (Colors are randomly generated)
-[Sample HTML file - Type 2 Wallpaper](_sample_output/Type2-12-Words-Sometimes-The-Smallest-Things-Take-Up-The-Most-Room-In-Your-Heart.html)
+[Sample generated HTML file - Type 2 Wallpaper](_outputs_wallpaper_creator_type2/wallpaper_creator_type2-for-quote-1-with-total-15-words.html)
 
-![type2-wallpaper-samples.jpg](_sample_output/type2-samples.jpg)
+![type2-wallpaper-samples.jpg](_outputs_wallpaper_creator_type2/wallpaper_creator_type2-for-quote-1-with-total-15-words.jpg)
+
+![type2-wallpaper-samples.jpg](_outputs_wallpaper_creator_type2/wallpaper_creator_type2-for-quote-2-with-total-15-words.jpg)
+
+![type2-wallpaper-samples.jpg](_outputs_wallpaper_creator_type2/wallpaper_creator_type2-for-quote-3-with-total-24-words.jpg)
